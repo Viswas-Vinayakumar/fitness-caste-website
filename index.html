@@ -86,6 +86,14 @@
 }
 
 
+.plan-card {
+  transition: transform 0.3s ease;
+}
+.plan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
   </style>
 </head>
 <body>
@@ -140,6 +148,40 @@
     <div class="col-md-3 mb-4">
       <i class="fas fa-hand-holding-heart service-icon"></i>
       <h5>Personal Training</h5>
+    </div>
+  </div>
+</section>
+
+
+<!-- Plans Section -->
+<section class="container" data-aos="fade-up">
+  <h2 class="section-title">Our Plans</h2>
+  <div class="row text-center">
+    <div class="col-md-4 mb-4">
+      <div class="plan-card p-4 border rounded shadow-sm">
+        <i class="fas fa-calendar-alt service-icon mb-3"></i>
+        <h4>Monthly Pack</h4>
+        <p class="mt-2">Perfect for those testing the waters. Includes a one-time joining fee.</p>
+        <h5 class="text-primary">Standard Price</h5>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="plan-card p-4 border rounded shadow-sm">
+        <i class="fas fa-calendar-check service-icon mb-3"></i>
+        <h4>4-Month Pack</h4>
+        <p class="mt-2">Save <strong>15% instantly</strong> with our bundled offer — no repeated admission fees.</p>
+        <h5 class="text-success">Best Value</h5>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="plan-card p-4 border rounded shadow-sm">
+        <i class="fas fa-graduation-cap service-icon mb-3"></i>
+        <h4>Student Offer</h4>
+        <p class="mt-2">Special pricing for students — up to <strong>20% off</strong> on regular rates. Bring your ID!</p>
+        <h5 class="text-warning">Limited Seats</h5>
+      </div>
     </div>
   </div>
 </section>
