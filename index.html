@@ -94,6 +94,16 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
+
+/* Video Styling */
+.video-container video {
+  max-height: 400px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
   </style>
 </head>
 <body>
@@ -199,6 +209,21 @@
       <div class="col-6 col-md-4 mb-3"><div class="bg-secondary" style="height:200px;"><img src="Gym 6.jpg" alt="Gym6"></div></div>
     </div>
   </section>
+
+
+  <section class="container my-5" data-aos="fade-up">
+    <h2 class="section-title">Gym Inauguration Highlights</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8 video-container">
+        <video controls poster="assets/img/video-thumbnail.jpg">
+          <source src="Inaguration.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </section>
+  
+
 
   <!-- Trainers Section -->
   <section class="container" data-aos="fade-up">
