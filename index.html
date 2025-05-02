@@ -104,6 +104,13 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
+
+@media (max-width: 767.98px) {
+  .services-wrapper {
+    display: none;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -118,10 +125,17 @@
   <!-- About Section -->
   <section class="container" data-aos="fade-up">
     <h2 class="section-title">About Fitness Castle</h2>
-    <p style="text-align:center; max-width:800px; margin:auto;">At <strong>Fitness Caste</strong>, we believe fitness is more than a routine — it’s a lifestyle. Our mission is to empower people to achieve their physical and mental peak through a supportive, results-driven community. Whether you’re a seasoned athlete or a complete beginner, our facilities and trainers are here to help you sculpt your best self. Clean, modern, and welcoming — Fitness Caste is where discipline meets transformation.</p>
+    <p style="text-align:center; max-width:800px; margin:auto;">At <strong>Fitness Caste</strong>, fitness isn’t just a routine — it’s a lifestyle upgrade. We’re a unisex gym built for people who refuse to settle for average. Whether you're chasing your first push-up or your next personal record, our goal is simple: help you unlock your strongest, healthiest, and most confident self.
+
+      Step into a clean, modern space where results speak louder than words. From state-of-the-art equipment to dedicated, certified trainers, everything here is designed to transform not just your body, but your mindset.
+      
+      No egos. No judgment. Just a powerful community where discipline meets results.
+      
+      🔥 Ready to level up? Join Fitness Caste — because you deserve to look and feel your absolute best.</p>
   </section>
 
-  
+  <button class="btn btn-primary d-block d-md-none mb-3" onclick="toggleServices()">View Our Services</button>
+<div class="services-wrapper">
 
   <!-- Services Section -->
 <section class="container" data-aos="fade-up">
@@ -161,7 +175,7 @@
     </div>
   </div>
 </section>
-
+</div>
 
 <!-- Plans Section -->
 <section class="container" data-aos="fade-up">
@@ -292,6 +306,19 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>
     AOS.init({ duration: 1200, once: true });
+
+    function toggleServices() {
+  var x = document.querySelector(".services-wrapper");
+  if (x.style.display === "none" || x.style.display === "") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
   </script>
+
+ 
+
 </body>
 </html>
